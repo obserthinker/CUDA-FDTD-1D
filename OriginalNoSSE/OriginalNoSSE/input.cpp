@@ -31,8 +31,8 @@ void init_check()
 void initialize()
 {
 	src_init();
-	step_space = 100;
-	step_time = 100;
+	step_space = 30;
+	step_time = 500;
 	Ex_init();
 	Hy_init();
 	boundary_init();
