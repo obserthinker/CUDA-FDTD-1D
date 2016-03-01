@@ -12,6 +12,12 @@ const float epsilon = 8.85e-12;
 //
 extern float *dev_Ex, *dev_Hy, *dev_coe_Ex;
 
+void Ex_transfer_Host_Device(int size)
+{
+	cudaMemcpy(dev_Ex, Ex, size * sizeof(float), cudaMemcpyHostToDevice);
+	cudaMemcpy(dev_coe_Ex, coe_Ex, sizeof(float), cudaMemcpyHostToDevice);
+}
+
 void Ex_init()
 {
 	int i;
@@ -30,6 +36,8 @@ void Ex_init()
 	}
 
 	*coe_Ex = dt / (epsilon * dz);
+
+	Ex_transfer_Host_Device(step_space_Ex);
 }
 
 void Ex_cmp()

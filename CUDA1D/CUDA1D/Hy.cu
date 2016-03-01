@@ -10,6 +10,12 @@ extern const float mu;
 //
 extern float *dev_Ex, *dev_Hy, *dev_coe_Hy;
 
+void Hy_transfer_Host_Device(int size)
+{
+	cudaMemcpy(dev_Hy, Hy, size * sizeof(float), cudaMemcpyHostToDevice);
+	cudaMemcpy(dev_coe_Hy, coe_Hy, sizeof(float), cudaMemcpyHostToDevice);
+}
+
 void Hy_init()
 {
 	int i, step_space_Hy;
@@ -27,6 +33,8 @@ void Hy_init()
 	}
 
 	*coe_Hy = dt / (mu*dz);
+
+	Hy_transfer_Host_Device(step_space_Hy);
 }
 
 void Hy_cmp()
