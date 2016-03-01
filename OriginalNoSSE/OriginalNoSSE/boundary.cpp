@@ -1,7 +1,7 @@
 #include <iostream>
 #include "boundary.h"
 
-extern float Ex_bd, dz, dt, coe_MUR, Ex_nbd;
+extern float Ex_bd, dz, dt, *coe_MUR, Ex_nbd;
 extern float *Ex;
 const float C = 3e8;
 extern int step_space;
@@ -11,7 +11,8 @@ void boundary_init()
 	Ex_nbd = 0.f;
 	Ex_bd = 0.f;
 
-	coe_MUR = (C*dt - dz) / (C*dt + dz);
+	coe_MUR = (float *)malloc(sizeof(float));
+	*coe_MUR = (C*dt - dz) / (C*dt + dz);
 }
 
 void boundary_cmp_MUR()
@@ -20,7 +21,7 @@ void boundary_cmp_MUR()
 	bd = step_space;
 	nbd = bd - 1;
 
-	Ex[bd] = Ex_nbd + coe_MUR*(Ex[nbd] - Ex_bd);
+	Ex[bd] = Ex_nbd + (*coe_MUR)*(Ex[nbd] - Ex_bd);
 
 	Ex_bd = Ex[bd];
 	Ex_nbd = Ex[nbd];

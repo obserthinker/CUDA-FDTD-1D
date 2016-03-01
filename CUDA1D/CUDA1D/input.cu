@@ -11,7 +11,7 @@ using namespace std;
 
 float space_length, time_length, omega;
 
-extern float coe_MUR, coe_Ex, coe_Hy, dt, dz;
+extern float coe_MUR, *coe_Ex, *coe_Hy, dt, dz;
 extern int step_space, step_time;
 
 extern const float PI = 3.141592653589793;
@@ -25,8 +25,8 @@ void init_check()
 	cout << "dt = " << dt << endl;
 	cout << "Nx : " << step_space << endl;
 	cout << "Nt : " << step_time << endl;
-	cout << "Coe_Ex: " << coe_Ex << endl;
-	cout << "Coe_Hy: " << coe_Hy << endl;
+	cout << "Coe_Ex: " << *coe_Ex << endl;
+	cout << "Coe_Hy: " << *coe_Hy << endl;
 	cout << "Coe_MUR: " << coe_MUR << endl;
 }
 
