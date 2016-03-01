@@ -1,12 +1,16 @@
-﻿Build started 3/1/2016 2:56:20 PM.
+﻿Build started 3/1/2016 3:12:07 PM.
      1>Project "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA1D\CUDA1D\CUDA1D.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt input.cu
-         input.cu
-     1>c:\users\obser\onedrive\documents\working\fdtd\cuda-fdtd-1d\cuda1d\cuda1d\input.cu(17): warning C4305: 'initializing' : truncation from 'double' to 'const float'
-     1>c:\users\obser\onedrive\documents\working\fdtd\cuda-fdtd-1d\cuda1d\cuda1d\input.cu(18): warning C4305: 'initializing' : truncation from 'int' to 'const float'
-     1>c:\users\obser\onedrive\documents\working\fdtd\cuda-fdtd-1d\cuda1d\cuda1d\input.cu(19): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
-     1>c:\users\obser\onedrive\documents\working\fdtd\cuda-fdtd-1d\cuda1d\cuda1d\input.cu(20): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Ex.cu Hy.cu main.cu
+         main.cu
+     1>c:\users\obser\onedrive\documents\working\fdtd\cuda-fdtd-1d\cuda1d\cuda1d\main.cu(20): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>c:\users\obser\onedrive\documents\working\fdtd\cuda-fdtd-1d\cuda1d\cuda1d\main.cu(21): warning C4305: 'initializing' : truncation from 'int' to 'const float'
+     1>c:\users\obser\onedrive\documents\working\fdtd\cuda-fdtd-1d\cuda1d\cuda1d\main.cu(22): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\users\obser\onedrive\documents\working\fdtd\cuda-fdtd-1d\cuda1d\cuda1d\main.cu(23): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+         Hy.cu
+         Ex.cu
+     1>c:\users\obser\onedrive\documents\working\fdtd\cuda-fdtd-1d\cuda1d\cuda1d\ex.cu(11): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA1D\Debug\CUDA1D.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA1D\Debug\CUDA1D.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA1D\Debug\CUDA1D.lib" /MACHINE:X86 Debug\boundary.obj
          Debug\compute.obj
@@ -29,4 +33,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.76
+Time Elapsed 00:00:01.77

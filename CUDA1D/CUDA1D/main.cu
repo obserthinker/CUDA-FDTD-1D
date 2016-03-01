@@ -14,6 +14,8 @@ void Save2File(float* Ex, float* Hy, int Nx);
 float *Ex, *Hy;
 int step_space, step_time;
 float *coe_Ex, *coe_Hy, coe_MUR, dt, dz, Ex_nbd, Ex_bd;
+//Declare Device variables
+float *dev_coe_Ex, *dev_coe_Hy, *dev_Ex, *dev_Hy;
 
 const float PI = 3.141592653589793;
 const float C = 299792458;

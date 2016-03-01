@@ -7,14 +7,20 @@ extern float *Ex, *Hy;
 extern int step_space, step_time;
 extern float *coe_Hy, dt, dz;
 extern const float mu;
+//
+extern float *dev_Ex, *dev_Hy, *dev_coe_Hy;
 
 void Hy_init()
 {
 	int i, step_space_Hy;
 	step_space_Hy = step_space;
 
+	//Allocate memory for Host
 	Hy = (float *)malloc(step_space_Hy * sizeof(float));
 	coe_Hy = (float *)malloc(sizeof(float));
+	//Allocate memory for device
+	cudaMalloc(&dev_coe_Hy, step_space_Hy * sizeof(float));
+	cudaMalloc(&dev_coe_Hy, sizeof(float));
 
 	for (i = 0; i < step_space_Hy; i++)	{
 		Hy[i] = 0.f;
