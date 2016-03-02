@@ -49,12 +49,8 @@ int main()
 		save2file();
 	}
 
-	
-
-
 	//Hy_checkout(size_Hy);
 	//Ex_checkout(size_Ex);
-
 	
     return 0;
 }
