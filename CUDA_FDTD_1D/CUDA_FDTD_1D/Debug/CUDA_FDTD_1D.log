@@ -1,0 +1,31 @@
+﻿Build started 3/2/2016 6:37:29 PM.
+     1>Project "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\CUDA_FDTD_1D.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\main.cu 
+       CudaBuild:
+         Compiling CUDA source file main.cu...
+         cmd.exe /C "C:\Users\obser\AppData\Local\Temp\tmpb802088ebbb044909f2a368c67272418.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\main.cu.obj "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\main.cu"
+         
+         C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\main.cu.obj "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\main.cu" 
+         main.cu
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\Debug\CUDA_FDTD_1D.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\Debug\CUDA_FDTD_1D.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\Debug\CUDA_FDTD_1D.lib" /MACHINE:X86 Debug\Ex.cu.obj
+         Debug\Hy.cu.obj
+         Debug\main.cu.obj
+         Debug\save2file.cu.obj
+         Debug\src.cu.obj
+         CUDA_FDTD_1D.vcxproj -> C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\Debug\CUDA_FDTD_1D.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\CUDA_FDTD_1D.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.55

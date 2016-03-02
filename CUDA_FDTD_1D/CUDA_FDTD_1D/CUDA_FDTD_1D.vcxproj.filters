@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{8bb5a546-7673-431b-aeeb-5d9c480195e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{b36ffd5f-5bba-4f36-b4df-85bf505e280a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="main.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Hy.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Ex.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="save2file.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hy.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="Ex.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="save2file.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

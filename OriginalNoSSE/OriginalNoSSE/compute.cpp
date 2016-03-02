@@ -17,8 +17,8 @@ void compute()
 	for (i = 0; i < step_time; i++){
 		Hy_cmp();
 		Ex_cmp();
-		boundary_cmp_MUR();
-		//Boundary_cmp_PEC();
+		//boundary_cmp_MUR();
+		Boundary_cmp_PEC();
 		src_cmp(i);
 		save2file();
 	}
