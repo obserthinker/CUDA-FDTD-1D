@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="boundary.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="compute.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Ex.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Hy.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="input.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="main.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="save2file.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="source.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{4b541e3e-95d4-4b05-ba0a-b75d486f8513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{148bfc63-356b-41a3-a762-e1d12cb28562}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="boundary.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="compute.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="Ex.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="Hy.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="save2file.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="source.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="input.cuh">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
