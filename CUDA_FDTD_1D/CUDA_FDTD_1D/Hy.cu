@@ -2,6 +2,8 @@
 #include "device_launch_parameters.h"
 #include <iostream>
 
+#define MULTI_B_T
+
 using namespace std;
 
 //host
@@ -66,6 +68,7 @@ void Hy_transfer_device_host(int size_Hy)
 	cudaMemcpy(Hy, dev_Hy, size_Hy * sizeof(float), cudaMemcpyDeviceToHost);
 }
 
+#ifndef MULTI_B_T
 __global__ void Hy_cmp_kernel(float* dev_Hy, float * dev_Ex, float coe_Hy, int size_space)
 {
 	int i;
@@ -75,3 +78,14 @@ __global__ void Hy_cmp_kernel(float* dev_Hy, float * dev_Ex, float coe_Hy, int s
 		//dev_Hy[i] = i*10.0;
 	}
 }
+#else
+__global__ void Hy_cmp_kernel(float* dev_Hy, float * dev_Ex, float coe_Hy, int size_space)
+{
+	int tid = threadIdx.x + blockIdx.x * blockDim.x;
+	for (tid = 0; tid < size_space; tid++){
+		dev_Hy[tid] = dev_Hy[tid] - (coe_Hy)*(dev_Ex[tid + 1] - dev_Ex[tid]);
+		//test
+		//dev_Hy[i] = i*10.0;
+	}
+}
+#endif

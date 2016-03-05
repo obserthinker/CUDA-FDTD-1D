@@ -1,10 +1,19 @@
-﻿Build started 3/2/2016 6:37:29 PM.
+﻿Build started 3/5/2016 6:40:32 PM.
      1>Project "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\CUDA_FDTD_1D.vcxproj" on node 2 (Build target(s)).
      1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\Ex.cu 
+       AddCudaCompileDeps:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\main.cu 
        CudaBuild:
+         Compiling CUDA source file Ex.cu...
+         cmd.exe /C "C:\Users\obser\AppData\Local\Temp\tmp1e10d30aef12410d825e6abeceb64059.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\Ex.cu.obj "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\Ex.cu"
+         
+         C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\Ex.cu.obj "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\Ex.cu" 
+         Ex.cu
+       CudaBuild:
          Compiling CUDA source file main.cu...
-         cmd.exe /C "C:\Users\obser\AppData\Local\Temp\tmpb802088ebbb044909f2a368c67272418.cmd"
+         cmd.exe /C "C:\Users\obser\AppData\Local\Temp\tmp321a7b6fc5f54a27ac44c2949d016701.cmd"
          "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\main.cu.obj "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\main.cu"
          
          C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\main.cu.obj "C:\Users\obser\OneDrive\Documents\working\FDTD\CUDA-FDTD-1D\CUDA_FDTD_1D\CUDA_FDTD_1D\main.cu" 
@@ -28,4 +37,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.55
+Time Elapsed 00:00:09.93
